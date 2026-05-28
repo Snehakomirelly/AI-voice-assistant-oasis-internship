@@ -16,9 +16,7 @@ recognition.lang = "en-US";
 recognition.continuous = false;
 recognition.interimResults = false;
 
-/* -----------------------------------
-   👋 GREETING
------------------------------------ */
+
 
 window.onload = function () {
     setTimeout(() => {
@@ -26,18 +24,12 @@ window.onload = function () {
     }, 1000);
 };
 
-/* -----------------------------------
-   🎤 START LISTENING
------------------------------------ */
+
 
 button.addEventListener("click", () => {
     window.speechSynthesis.cancel();
     recognition.start();
 });
-
-/* -----------------------------------
-   🌙 THEME TOGGLE
------------------------------------ */
 
 themeBtn.addEventListener("click", () => {
     document.body.classList.toggle("light");
@@ -50,10 +42,6 @@ themeBtn.addEventListener("click", () => {
         speak("Dark mode enabled");
     }
 });
-
-/* -----------------------------------
-   🎧 EVENTS
------------------------------------ */
 
 recognition.onstart = () => {
     statusText.innerHTML = "Listening...";
@@ -77,11 +65,6 @@ recognition.onresult = (event) => {
     output.innerHTML = transcript;
     handleCommand(transcript);
 };
-
-/* -----------------------------------
-   👋 GREETING FUNCTION
------------------------------------ */
-
 function wishUser() {
     let hour = new Date().getHours();
 
@@ -89,11 +72,6 @@ function wishUser() {
     else if (hour < 18) speak("Good Afternoon");
     else speak("Good Evening");
 }
-
-/* -----------------------------------
-   🧠 HANDLE COMMANDS
------------------------------------ */
-
 function handleCommand(command) {
 
     /* ---------------- GOOGLE ---------------- */
@@ -167,11 +145,6 @@ function handleCommand(command) {
         output.innerHTML = date;
         speak("Today's date is " + date);
     }
-
-    /* -----------------------------------
-       📝 VOICE NOTES FEATURE (ADDED)
-    ----------------------------------- */
-
     else if (command.includes("take note")) {
 
         let note = command.replace("take note", "").trim();
@@ -214,16 +187,10 @@ function handleCommand(command) {
 
         speak("All notes cleared");
     }
-
-    /* ---------------- UNKNOWN ---------------- */
     else {
         speak("Sorry, I did not understand");
     }
 }
-
-/* -----------------------------------
-   🔊 SPEAK FUNCTION
------------------------------------ */
 
 function speak(text) {
     window.speechSynthesis.cancel();
