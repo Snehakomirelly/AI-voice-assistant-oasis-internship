@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Assistant</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="background-animation"></div>
+
+    <div class="container">
+
+        <!-- 🌙 DARK/LIGHT MODE BUTTON -->
+        <div style="text-align:right; margin-bottom:10px;">
+            <button id="theme-toggle">
+                🌙 Dark Mode
+            </button>
+        </div>
+
+        <div class="top-bar">
+            <h1>🤖 AI Voice Assistant</h1>
+            <p>Your Smart Virtual Assistant</p>
+        </div>
+
+        <div class="assistant-circle">
+            <div class="inner-circle"></div>
+        </div>
+
+        <button id="listen-btn">
+            🎤 Start Listening
+        </button>
+
+        <div class="status-box">
+            <h3>Status</h3>
+            <p id="status">Idle</p>
+        </div>
+
+        <div class="result-box">
+            <h3>You Said</h3>
+            <p id="output">
+                Click microphone and speak...
+            </p>
+        </div>
+
+        <!-- ❌ REMOVED: Voice Notes Section -->
+
+        <div class="commands-box">
+
+            <h3>Supported Commands</h3>
+
+            <ul>
+                <li>Open Google</li>
+                <li>Open YouTube</li>
+                <li>Open LinkedIn</li>
+                <li>Open GitHub</li>
+                <li>Open ChatGPT</li>
+                <li>Open WhatsApp</li>
+                <li>Open Spotify</li>
+                <li>Open Wikipedia</li>
+                <li>Open LeetCode</li>
+                <li>Open Amazon</li>
+                <li>Play Music</li>
+                <li>Battery Status</li>
+                <li>What is the Time</li>
+                <li>Tell Me the Date</li>
+                <li>Search Anything</li>
+                <li>Dark / Light Mode</li>
+                <li>Calculate 25 plus 10</li>
+                <li>Calculate 50 minus 20</li>
+                <li>Calculate 8 multiplied by 5</li>
+                <li>Calculate 100 divided by 4</li>
+                <li>What is the weather</li>
+                <li>Take note buy milk</li>
+                <li>Take note complete assignment</li>
+                <li>Show notes</li>
+                <li>Clear notes</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
