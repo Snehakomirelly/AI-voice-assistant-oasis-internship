@@ -5,7 +5,7 @@
 }
 
 /* ---------------------------
-   🌌 PREMIUM ANIMATED BACKGROUND
+    BACKGROUND
 ----------------------------*/
 
 body{
@@ -42,7 +42,7 @@ body{
 }
 
 /* ---------------------------
-   ✨ BACKGROUND EFFECTS
+    BACKGROUND EFFECTS
 ----------------------------*/
 
 .background-animation{
@@ -83,7 +83,7 @@ body{
 }
 
 /* ---------------------------
-   📦 MAIN CONTAINER
+    MAIN CONTAINER
 ----------------------------*/
 
 .container{
@@ -105,7 +105,7 @@ body{
 }
 
 /* ---------------------------
-   🤖 ASSISTANT CIRCLE
+    ASSISTANT CIRCLE
 ----------------------------*/
 
 .assistant-circle{
@@ -135,7 +135,7 @@ body{
 }
 
 /* ---------------------------
-   🎤 BUTTON
+    BUTTON
 ----------------------------*/
 
 button{
@@ -168,7 +168,7 @@ button.listening{
 }
 
 /* ---------------------------
-   📋 CARDS
+    CARDS
 ----------------------------*/
 
 .status-box,
@@ -200,7 +200,7 @@ button.listening{
 }
 
 /* ---------------------------
-   📜 COMMAND LIST
+    COMMAND LIST
 ----------------------------*/
 
 .commands-box ul{
@@ -213,7 +213,7 @@ button.listening{
 }
 
 /* ===================================================
-   🆕 VOICE NOTES FEATURE (NEW ADDED SECTION)
+   🆕 VOICE NOTES FEATURE 
 =================================================== */
 
 .notes-box{
